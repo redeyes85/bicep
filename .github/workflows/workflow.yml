@@ -1,6 +1,13 @@
 name: deploy-toy-website
 
-on: [workflow_dispatch]
+concurrency: toy-company
+
+on: 
+  push:
+    branches:
+      - "main"
+    paths:
+      - "deploy/**"
 
 env:
   AZURE_RESOURCE_GROUP_NAME: bicep-gh-actions
