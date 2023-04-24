@@ -8,6 +8,7 @@ on:
       - "main"
     paths:
       - "deploy/**"
+      - ".github/workflows/**"
 
 env:
   AZURE_RESOURCE_GROUP_NAME: bicep-gh-actions
