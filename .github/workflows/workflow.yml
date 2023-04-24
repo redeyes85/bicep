@@ -83,4 +83,4 @@ jobs:
           resourceGroupName: ${{ env.AZURE_RESOURCE_GROUP_NAME }}
           template: ./deploy/main.bicep
           parameters: environmentType=${{ env.ENVIRONMENT }}
-          deploymentMode: Incremental
+          deploymentMode: Complete
